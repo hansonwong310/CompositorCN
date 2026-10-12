@@ -18,29 +18,22 @@ static void initDictionary(void) {
         }
         
         NSDictionary *specials = @{
-            @"Untitled": @"未命名",
             @"Show Controls": @"显示变换控件",
             @"Auto Select": @"自动选择",
-            @"Width": @"宽度",
-            @"Height": @"高度",
             @"Scale": @"缩放",
-            @"Resolution": @"分辨率",
-            @"High quality": @"高品质 (两次立方)",
-            @"Bilinear": @"两次线性",
-            @"Nearest neighbor": @"邻近",
-            @"Transparent canvas": @"透明画布",
-            @"White canvas": @"白色画布",
-            @"Black canvas": @"黑色画布",
-            @"Pixels": @"像素",
-            @"Inches": @"英寸",
-            @"Centimeters": @"厘米",
-            @"Millimeters": @"毫米",
-            @"Point Sample": @"取样点",
-            @"3 by 3 Average": @"3×3 平均",
-            @"5 by 5 Average": @"5×5 平均",
+            @"Expand": @"扩展",
+            @"Contract": @"收缩",
             @"Magic": @"魔棒",
             @"Wand": @"魔棒",
             @"Object": @"对象选择",
+            @"Erase": @"橡皮擦",
+            @"Smoothing": @"平滑度",
+            @"Smear": @"涂抹",
+            @"Paint": @"画笔",
+            @"Blur": @"模糊",
+            @"Liquify": @"液化",
+            @"Clone Stamp": @"仿制图章",
+            @"Spot Healing": @"污点修复",
             @"Freehand": @"自由套索",
             @"Polygonal": @"多边形",
             @"Rectangle": @"矩形",
@@ -48,36 +41,48 @@ static void initDictionary(void) {
             @"New": @"新建选区",
             @"Add": @"添加到选区",
             @"Subtract": @"从选区减去",
-            @"Expand": @"扩展",
-            @"Contract": @"收缩",
-            @"Feather": @"羽化",
             @"Tolerance": @"容差",
             @"Contiguous": @"连续",
             @"Anti-alias": @"消除锯齿",
             @"All Layers": @"所有图层",
-            @"Sample All Layers": @"对所有图层取样",
+            @"Feather": @"羽化",
+            @"Hardness": @"硬度",
+            @"Opacity": @"不透明度",
+            @"Flow": @"流量",
+            @"Size": @"大小",
+            @"Spacing": @"间距",
+            @"Angle": @"角度",
+            @"Roundness": @"圆度",
             
-            @"Gaussian Blur": @"高斯模糊",
-            @"Motion Blur": @"动感模糊",
-            @"Add Noise": @"添加杂色",
-            @"Vignette": @"晕影",
-            @"Bloom / Glow": @"辉光 / 发光",
-            @"Dither": @"抖动",
-            @"Scanlines": @"扫描线",
-            @"Tonal Contrast": @"色调对比度",
-            @"Lens Correction": @"镜头校正",
-            @"Camera Raw Filter": @"Camera Raw 滤镜",
-            @"Remove Background": @"移除背景",
-            @"Content-Aware Fill": @"内容识别填充",
+            @"Content-Aware": @"内容识别",
+            @"Create Texture": @"创建纹理",
+            @"Proximity Match": @"近似匹配",
             
-            @"Curves": @"曲线",
-            @"Levels": @"色阶",
-            @"Exposure": @"曝光度",
-            @"Hue/Saturation": @"色相/饱和度",
-            @"Gradient Map": @"渐变映射",
-            @"Grain": @"颗粒",
-            @"Black & White": @"黑白",
-            @"Color Balance": @"色彩平衡",
+            @"Duplicate Layer": @"复制图层",
+            @"Duplicate Layers": @"复制图层",
+            @"Merge Down": @"向下合并",
+            @"Merge Layers": @"合并图层",
+            @"Merge Group": @"合并组",
+            @"Layer via Copy": @"通过拷贝的图层",
+            
+            @"Point Sample": @"取样点",
+            @"3 by 3 Average": @"3×3 平均",
+            @"5 by 5 Average": @"5×5 平均",
+            @"High quality": @"高品质 (两次立方)",
+            @"Bilinear": @"两次线性",
+            @"Nearest neighbor": @"邻近",
+            
+            @"Untitled": @"未命名",
+            @"Width": @"宽度",
+            @"Height": @"高度",
+            @"Resolution": @"分辨率",
+            @"Transparent canvas": @"透明画布",
+            @"White canvas": @"白色画布",
+            @"Black canvas": @"黑色画布",
+            @"Pixels": @"像素",
+            @"Inches": @"英寸",
+            @"Centimeters": @"厘米",
+            @"Millimeters": @"毫米",
             
             @"Normal": @"正常",
             @"Darken": @"变暗",
@@ -102,20 +107,26 @@ static void initDictionary(void) {
             @"Saturation": @"饱和度",
             @"Color": @"颜色",
             @"Luminosity": @"明度",
-
-            @"File": @"文件",
-            @"Edit": @"编辑",
-            @"Image": @"图像",
-            @"Layer": @"图层",
-            @"Select": @"选择",
-            @"Filter": @"滤镜",
-            @"View": @"视图",
-            @"Window": @"窗口",
-            @"Help": @"帮助",
-            @"Show": @"显示",
-            @"Snap To": @"对齐到",
-            @"Open Recent": @"最近打开",
-            @"New Adjustment Layer": @"新建调整图层"
+            
+            @"Gaussian Blur": @"高斯模糊",
+            @"Motion Blur": @"动感模糊",
+            @"Add Noise": @"添加杂色",
+            @"Vignette": @"晕影",
+            @"Bloom / Glow": @"辉光 / 发光",
+            @"Dither": @"抖动",
+            @"Scanlines": @"扫描线",
+            @"Tonal Contrast": @"色调对比度",
+            @"Lens Correction": @"镜头校正",
+            @"Camera Raw Filter": @"Camera Raw 滤镜",
+            @"Remove Background": @"移除背景",
+            @"Curves": @"曲线",
+            @"Levels": @"色阶",
+            @"Exposure": @"曝光度",
+            @"Hue/Saturation": @"色相/饱和度",
+            @"Gradient Map": @"渐变映射",
+            @"Grain": @"颗粒",
+            @"Black & White": @"黑白",
+            @"Color Balance": @"色彩平衡"
         };
         [dict addEntriesFromDictionary:specials];
         g_dict = [dict copy];
@@ -128,6 +139,11 @@ static NSString *translateString(NSString *orig) {
     
     NSString *direct = g_dict[orig];
     if (direct) return direct;
+    
+    NSString *trimmed = [orig stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceCharacterSet]];
+    if (trimmed.length != orig.length && g_dict[trimmed]) {
+        return [orig stringByReplacingOccurrencesOfString:trimmed withString:g_dict[trimmed]];
+    }
     
     if ([orig hasSuffix:@"…"]) {
         NSString *base = [orig substringToIndex:orig.length - 1];
@@ -169,6 +185,18 @@ static void swizzleInstanceMethod(Class cls, SEL orig, SEL swiz) {
         method_exchangeImplementations(mOrig, mSwiz);
     }
 }
+
+@interface NSAttributedString (CompositorZH)
+@end
+
+@implementation NSAttributedString (CompositorZH)
+- (instancetype)zh_initWithString:(NSString *)str {
+    return [self zh_initWithString:translateString(str)];
+}
+- (instancetype)zh_initWithString:(NSString *)str attributes:(NSDictionary<NSAttributedStringKey,id> *)attrs {
+    return [self zh_initWithString:translateString(str) attributes:attrs];
+}
+@end
 
 @interface NSMenuItem (CompositorZH)
 @end
@@ -243,6 +271,9 @@ __attribute__((constructor))
 static void initCompositorZH(void) {
     @autoreleasepool {
         initDictionary();
+        
+        swizzleInstanceMethod([NSAttributedString class], @selector(initWithString:), @selector(zh_initWithString:));
+        swizzleInstanceMethod([NSAttributedString class], @selector(initWithString:attributes:), @selector(zh_initWithString:attributes:));
         
         swizzleInstanceMethod([NSMenuItem class], @selector(initWithTitle:action:keyEquivalent:), @selector(zh_initWithTitle:action:keyEquivalent:));
         swizzleInstanceMethod([NSMenuItem class], @selector(setTitle:), @selector(zh_setTitle:));

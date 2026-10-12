@@ -36,7 +36,12 @@ def find_app_path(custom_path=None):
     return None
 
 def get_plugin_dir():
-    return Path(__file__).resolve().parent.parent
+    p = Path(__file__).resolve().parent
+    if (p / "zh-Hans.lproj").exists():
+        return p
+    if (p.parent / "zh-Hans.lproj").exists():
+        return p.parent
+    return p.parent.parent
 
 def patch_binary_literals(bin_path):
     with open(bin_path, "rb") as f:
@@ -96,6 +101,7 @@ def install_plugin(app_path):
     sparkle_bin = sparkle_dir / "Sparkle"
     sparkle_raw = sparkle_dir / "Sparkle_raw"
     src_m = plugin_dir / "Sources/CompositorZH/CompositorZH.m"
+    precompiled_dylib = plugin_dir / "CompositorZH.dylib"
 
     if not sparkle_raw.exists():
         shutil.copyfile(sparkle_bin, sparkle_raw)
@@ -104,16 +110,23 @@ def install_plugin(app_path):
         ], stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL)
         print("  [✓] 已就绪底座动态库 -> Sparkle_raw")
 
-    print("  [*] 正在编译并链接 Proxy 汉化插件...")
-    cmd = [
-        "clang", "-shared", "-fPIC", "-arch", "arm64",
-        "-install_name", "@rpath/Sparkle.framework/Versions/B/Sparkle",
-        f"-Wl,-reexport_library,{sparkle_raw}",
-        "-framework", "Foundation", "-framework", "AppKit",
-        str(src_m), "-o", str(sparkle_bin)
-    ]
-    subprocess.run(cmd, check=True)
-    print("  [✓] 动态 Runtime Hook 插件已注入")
+    if precompiled_dylib.exists():
+        print("  [*] 正在部署预编译 Proxy 汉化插件动态库...")
+        shutil.copyfile(precompiled_dylib, sparkle_bin)
+        print("  [✓] 动态 Runtime Hook 插件已注入")
+    elif src_m.exists():
+        print("  [*] 正在编译并链接 Proxy 汉化插件...")
+        cmd = [
+            "clang", "-shared", "-fPIC", "-arch", "arm64",
+            "-install_name", "@rpath/Sparkle.framework/Versions/B/Sparkle",
+            f"-Wl,-reexport_library,{sparkle_raw}",
+            "-framework", "Foundation", "-framework", "AppKit",
+            str(src_m), "-o", str(sparkle_bin)
+        ]
+        subprocess.run(cmd, check=True)
+        print("  [✓] 动态 Runtime Hook 插件已注入")
+    else:
+        print("  [!] 警告: 未找到 Proxy 插件动态库或源码，跳过动态 Hook 注入")
 
     if info_plist_path.exists():
         try:

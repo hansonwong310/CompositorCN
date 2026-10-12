@@ -1,0 +1,244 @@
+/* 
+  Localizable.strings (Simplified Chinese)
+  Compositor 官方汉化插件语言包
+  翻译标准：严格对照 Adobe Photoshop 官方简体中文版行业术语
+*/
+
+/* 顶部菜单栏通用 */
+"File" = "文件";
+"Edit" = "编辑";
+"Image" = "图像";
+"Layer" = "图层";
+"Select" = "选择";
+"Filter" = "滤镜";
+"View" = "视图";
+"Window" = "窗口";
+"Help" = "帮助";
+"Compositor" = "Compositor";
+
+/* 文件菜单 File */
+"New Canvas…" = "新建画布…";
+"Open Project…" = "打开项目…";
+"Open Recent" = "最近打开";
+"Clear Menu" = "清除菜单";
+"Import Images…" = "导入图像…";
+"Save" = "存储";
+"Save As…" = "存储为…";
+"Export As…" = "导出为…";
+"Export JPEG…" = "导出为 JPEG…";
+"Export PNG…" = "导出为 PNG…";
+"Close Project" = "关闭项目";
+
+/* 编辑菜单 Edit */
+"Undo" = "撤销";
+"Redo" = "重做";
+"Cut" = "剪切";
+"Copy" = "复制";
+"Copy Merged" = "合并复制";
+"Paste" = "粘贴";
+"Clear Selection Pixels" = "清除选区像素";
+"Fill with Foreground Color" = "填充前景色";
+"Fill with Background Color" = "填充背景色";
+"Content-Aware Fill…" = "内容识别填充…";
+"Transform Layer" = "自由变换图层";
+"Keyboard Shortcuts…" = "键盘快捷键…";
+"Search Commands…" = "搜索命令…";
+
+/* 图像菜单 Image */
+"Image Size…" = "图像大小…";
+"Canvas Size…" = "画布大小…";
+"Trim…" = "基于透明度裁剪…";
+"Rotate Canvas 90° Clockwise" = "顺时针旋转画布 90 度";
+"Rotate Canvas 90° Counterclockwise" = "逆时针旋转画布 90 度";
+"Flip Canvas Horizontal" = "水平翻转画布";
+"Flip Canvas Vertical" = "垂直翻转画布";
+
+/* 图层菜单 Layer */
+"New Blank Layer" = "新建空白图层";
+"New Adjustment Layer" = "新建调整图层";
+"Group Selected Layers" = "从所选图层新建组";
+"Ungroup Layers" = "取消图层编组";
+"Rename Layer…" = "重命名图层…";
+"Delete Layer" = "删除图层";
+"Hide Layer" = "隐藏图层";
+"Show All" = "显示全部";
+"Layer via Copy" = "通过拷贝的图层";
+"Move Layer Up" = "上移一层";
+"Move Layer Down" = "下移一层";
+"Move Out of Folder" = "移出文件夹";
+"Flip Layer Horizontal" = "水平翻转图层";
+"Flip Layer Vertical" = "垂直翻转图层";
+"Release Clipping Mask" = "释放剪贴蒙版";
+"Create Clipping Mask" = "创建剪贴蒙版";
+"Add Layer Mask" = "添加图层蒙版";
+"Add Layer Mask from Selection" = "添加图层蒙版（显示选区）";
+"Add Layer Mask Hiding Selection" = "添加图层蒙版（隐藏选区）";
+"Add Layer Mask (Hide All)" = "添加图层蒙版（隐藏全部）";
+"Edit Adjustment…" = "编辑调整…";
+
+/* 选择菜单 Select */
+"All" = "全部";
+"Deselect" = "取消选择";
+"Inverse" = "反向";
+"Color Range…" = "色彩范围…";
+"Subject" = "主体";
+"Modify" = "修改";
+"Expand…" = "扩展…";
+"Contract…" = "收缩…";
+"Feather…" = "羽化…";
+"Document Bounds" = "文档边界";
+"Layer's Pixels" = "载入图层选区";
+"Mask's Black Areas" = "蒙版黑色区域";
+
+/* 滤镜菜单 Filter */
+"Last Filter" = "上次滤镜操作";
+"Gaussian Blur" = "高斯模糊";
+"Motion Blur" = "动感模糊";
+"Add Noise" = "添加杂色";
+"Vignette" = "晕影";
+"Bloom / Glow" = "辉光 / 发光";
+"Dither" = "抖动";
+"Scanlines" = "扫描线";
+"Tonal Contrast" = "色调对比度";
+"Lens Correction" = "镜头校正";
+"Camera Raw Filter" = "Camera Raw 滤镜";
+"Remove Background" = "移除背景";
+"Curves…" = "曲线…";
+"Levels…" = "色阶…";
+"Exposure" = "曝光度";
+"Hue/Saturation…" = "色相/饱和度…";
+"Gradient Map" = "渐变映射";
+"Grain" = "颗粒";
+"Black & White" = "黑白";
+"Color Balance" = "色彩平衡";
+
+/* 视图菜单 View */
+"Fit Canvas" = "按屏幕大小缩放";
+"Actual Pixels" = "实际像素 (100%)";
+"Zoom In" = "放大";
+"Zoom Out" = "缩小";
+"Rulers" = "标尺";
+"Grid" = "网格";
+"Guides" = "参考线";
+"Clear Guides" = "清除参考线";
+"Lock Guides" = "锁定参考线";
+"Snap" = "对齐";
+"Snap To" = "对齐到";
+"Pixel Grid (800% and above)" = "像素网格 (800% 及以上)";
+"Navigator (300% and above)" = "导航器 (300% 及以上)";
+"Show Transform Controls" = "显示变换控件";
+"Grid Settings…" = "网格设置…";
+"Toggle Fullscreen" = "切换全屏";
+
+/* 工具箱名称 Tools */
+"Move / Transform" = "移动 / 变换工具";
+"Rectangular Marquee" = "矩形选框工具";
+"Elliptical Marquee" = "椭圆选框工具";
+"Lasso" = "套索工具";
+"Polygonal Lasso" = "多边形套索工具";
+"Magic Wand" = "魔棒工具";
+"Object Selection" = "对象选择工具";
+"Crop" = "裁剪工具";
+"Brush" = "画笔工具";
+"Eraser" = "橡皮擦工具";
+"Spot Healing Brush" = "污点修复画笔工具";
+"Clone Stamp" = "仿制图章工具";
+"Liquify" = "液化工具";
+"Blur" = "模糊工具";
+"Smudge" = "涂抹工具";
+"Gradient" = "渐变工具";
+"Rectangle" = "矩形工具";
+"Ellipse" = "椭圆工具";
+"Line" = "直线工具";
+"Type" = "横排文字工具";
+"Eyedropper" = "吸管工具";
+"Hand" = "抓手工具";
+"Zoom" = "缩放工具";
+"Pan" = "抓手平移";
+
+/* 图层面板 Layers Panel */
+"Layers" = "图层";
+"No layers yet" = "暂无图层";
+"New blank layer" = "新建空白图层";
+"New folder" = "新建文件夹组";
+"Layer effects" = "图层样式效果";
+"Blend mode" = "混合模式";
+"Opacity" = "不透明度";
+"Fill" = "填充";
+"Blend" = "混合";
+"Opacity percent" = "不透明度百分比";
+
+/* 混合模式 Blend Modes (严格 PS 标准) */
+"Normal" = "正常";
+"Darken" = "变暗";
+"Multiply" = "正片叠底";
+"Color Burn" = "颜色加深";
+"Linear Burn" = "线性加深";
+"Lighten" = "变亮";
+"Screen" = "滤色";
+"Color Dodge" = "颜色减淡";
+"Linear Dodge (Add)" = "线性减淡 (添加)";
+"Overlay" = "叠加";
+"Soft Light" = "柔光";
+"Hard Light" = "强光";
+"Vivid Light" = "亮光";
+"Linear Light" = "线性光";
+"Pin Light" = "点光";
+"Hard Mix" = "实色混合";
+"Difference" = "差值";
+"Exclusion" = "排除";
+"Subtract" = "减去";
+"Divide" = "划分";
+"Hue" = "色相";
+"Saturation" = "饱和度";
+"Color" = "颜色";
+"Luminosity" = "明度";
+
+/* 图层样式 Effects / Layer Styles */
+"Stroke" = "描边";
+"Inner Shadow" = "内阴影";
+"Inner Glow" = "内发光";
+"Color Overlay" = "颜色叠加";
+"Outer Glow" = "外发光";
+"Drop Shadow" = "投影";
+"Position" = "位置";
+"Outside" = "外部";
+"Inside" = "内部";
+"Center" = "居中";
+"Size" = "大小";
+"Spread" = "扩展";
+"Distance" = "距离";
+
+/* 对话框常用按钮与通用词 */
+"OK" = "确定";
+"Cancel" = "取消";
+"Reset" = "复位";
+"Restore Defaults" = "恢复默认值";
+"Done" = "完成";
+"Apply" = "应用";
+"Preview" = "预览";
+"Resize" = "调整大小";
+"Width" = "宽度";
+"Height" = "高度";
+"Resolution" = "分辨率";
+"Units" = "单位";
+"Pixels" = "像素";
+"Inches" = "英寸";
+"Centimeters" = "厘米";
+"Millimeters" = "毫米";
+"Sampling" = "重新采样";
+"Channel" = "通道";
+"Input black" = "输入色阶 (黑场)";
+"Input white" = "输入色阶 (白场)";
+"Output black" = "输出色阶 (黑场)";
+"Output white" = "输出色阶 (白场)";
+"Gamma" = "输入灰阶 (Gamma)";
+"Colorize" = "着色";
+"Lightness" = "明度";
+"Preserve Luminosity" = "保持明度";
+"Shadows" = "阴影";
+"Midtones" = "中间调";
+"Highlights" = "高光";
+"Cyan / Red" = "青色 / 红色";
+"Magenta / Green" = "洋红 / 绿色";
+"Yellow / Blue" = "黄色 / 蓝色";

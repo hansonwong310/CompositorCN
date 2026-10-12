@@ -1,10 +1,12 @@
-/* CompositorZH 全量汉化字典（完整收录 · 覆盖率 99%+） */
+/* CompositorZH 全量汉化字典 (权威无死角补齐版) */
 
 "100%" = "100%";
 "1080p" = "1080p (全高清)";
 "1440p" = "1440p (2K)";
 "16 bits per channel" = "每通道 16 位";
+"3 by 3 Average" = "3×3 平均";
 "4K" = "4K (超高清)";
+"5 by 5 Average" = "5×5 平均";
 "ASCII" = "ASCII 字符";
 "Actual Pixels" = "实际像素 (100%)";
 "Actual pixels (⌘1)" = "实际像素 (⌘1)";
@@ -43,9 +45,11 @@
 "Bayer 2 × 2" = "拜耳 2 × 2";
 "Bayer 4 × 4" = "拜耳 4 × 4";
 "Bayer 8 × 8" = "拜耳 8 × 8";
+"Bilinear" = "两次线性";
 "Black" = "黑色";
 "Black & White" = "黑白";
 "Black · Hide" = "黑色 · 隐藏";
+"Black, White" = "黑白";
 "Blend" = "混合";
 "Blend mode" = "混合模式";
 "Blend the chosen color into the edges while keeping the center unchanged" = "将选定颜色混合至边缘，同时保持中心不变";
@@ -113,6 +117,7 @@
 "Component" = "组件";
 "Compositor" = "Compositor";
 "Constrain Crop" = "限制裁切比例";
+"Content-Aware" = "内容识别";
 "Content-Aware Fill" = "内容识别填充";
 "Content-Aware Fill..." = "内容识别填充…";
 "Content-Aware Fill…" = "内容识别填充…";
@@ -124,6 +129,7 @@
 "Copy" = "复制";
 "Copy Merged" = "合并复制";
 "Create Clipping Mask" = "创建剪贴蒙版";
+"Create Texture" = "创建纹理";
 "Create canvas" = "创建画布";
 "Crop" = "裁剪";
 "Crop (C)" = "裁剪工具 (C)";
@@ -145,6 +151,7 @@
 "Depth" = "深度";
 "Deselect" = "取消选择";
 "Detail" = "细节";
+"Diamond" = "菱形";
 "Difference" = "差值";
 "Diffusion" = "扩散";
 "Displace" = "置换";
@@ -158,6 +165,8 @@
 "Dots" = "圆点";
 "Draw Guides" = "绘制参考线";
 "Drop Shadow" = "投影";
+"Duplicate Layer" = "复制图层";
+"Duplicate Layers" = "复制图层";
 "Edge" = "边缘";
 "Edit" = "编辑";
 "Edit Adjustment..." = "编辑调整…";
@@ -168,6 +177,7 @@
 "Elliptical Marquee" = "椭圆选框工具";
 "Empty selection" = "空选区";
 "Enable Lens Profile Corrections" = "启用镜头配置文件校正";
+"Erase" = "橡皮擦";
 "Eraser" = "橡皮擦";
 "Eraser (E)" = "橡皮擦 (E)";
 "Exclusion" = "排除";
@@ -208,6 +218,8 @@
 "Font" = "字体";
 "Foreground" = "前景";
 "Foreground color" = "前景色";
+"Foreground to Background" = "前景色到背景色";
+"Foreground to Transparent" = "前景色到透明";
 "Format" = "格式";
 "Free" = "自由";
 "Fuzziness" = "颜色容差";
@@ -240,6 +252,7 @@
 "Hide Layer" = "隐藏图层";
 "Hide Others" = "隐藏其他";
 "High" = "高";
+"High quality" = "高品质 (两次立方)";
 "Highlight Recovery" = "高光恢复";
 "Highlights" = "高光";
 "Histogram" = "直方图";
@@ -312,6 +325,7 @@
 "Luminosity" = "明度";
 "Magenta / Green" = "洋红 / 绿色";
 "Magentas" = "洋红";
+"Magic" = "魔棒";
 "Magic Wand" = "魔棒工具";
 "Manual" = "手动";
 "Marquee" = "选框";
@@ -319,6 +333,9 @@
 "Mask's Black Areas" = "蒙版黑色区域";
 "Masking" = "蒙版蒙版度";
 "Medium Contrast" = "中等对比度";
+"Merge Down" = "向下合并";
+"Merge Group" = "合并组";
+"Merge Layers" = "合并图层";
 "Midtones" = "中间调";
 "Millimeters" = "毫米";
 "Mixer" = "混色";
@@ -334,6 +351,7 @@
 "Move Out of Folder" = "移出文件夹";
 "Multiply" = "正片叠底";
 "Navigator (300% and above)" = "导航器 (300% 及以上)";
+"Nearest neighbor" = "邻近";
 "New" = "新建";
 "New Adjustment Layer" = "新建调整图层";
 "New Blank Layer" = "新建空白图层";
@@ -366,7 +384,7 @@
 "Outside" = "外部";
 "Overlay" = "叠加";
 "Page" = "页面";
-"Paint" = "涂抹";
+"Paint" = "画笔";
 "Pan" = "抓手平移";
 "Paste" = "粘贴";
 "Percent" = "百分比";
@@ -374,6 +392,7 @@
 "Pixel Grid (800% and above)" = "像素网格 (800% 及以上)";
 "Pixel Size" = "像素大小";
 "Pixels" = "像素";
+"Point Sample" = "取样点";
 "Polygonal Lasso" = "多边形套索工具";
 "Position" = "位置";
 "Preserve Luminosity" = "保持明度";
@@ -387,8 +406,10 @@
 "Preview" = "预览";
 "Process" = "处理";
 "Projection" = "投影";
+"Proximity Match" = "近似匹配";
 "Quality" = "品质";
 "Quit Compositor" = "退出 Compositor";
+"Radial" = "径向";
 "Radius" = "半径";
 "Range" = "范围";
 "Ratio" = "比例";
@@ -400,6 +421,7 @@
 "Redo" = "重做";
 "Reds" = "红色";
 "Refine" = "优化选区";
+"Reflected" = "对称";
 "Relative to current dimensions" = "相对于当前尺寸";
 "Release Clipping Mask" = "释放剪贴蒙版";
 "Remove Background" = "移除背景";
@@ -422,6 +444,7 @@
 "Roundness" = "圆度";
 "Rulers" = "标尺";
 "Sample" = "取样";
+"Sample Ring" = "取样环";
 "Sample Size" = "取样大小";
 "Sampling" = "重新采样";
 "Saturation" = "饱和度";
@@ -443,8 +466,11 @@
 "Shape" = "形状";
 "Sharpening" = "锐化";
 "Show All" = "显示全部";
+"Show Controls" = "显示变换控件";
 "Show Transform Controls" = "显示变换控件";
 "Size" = "大小";
+"Smear" = "涂抹";
+"Smoothing" = "平滑度";
 "Smoothness" = "平滑度";
 "Smudge" = "涂抹工具";
 "Snap" = "对齐";
@@ -487,6 +513,7 @@
 "Ungroup Layers" = "取消图层编组";
 "Uniform" = "等比";
 "Units" = "单位";
+"Untitled" = "未命名";
 "Updating..." = "正在更新…";
 "Updating…" = "正在更新…";
 "Vertical" = "垂直";
